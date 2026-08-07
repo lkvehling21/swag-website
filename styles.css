@@ -236,6 +236,25 @@ a { color: inherit; }
   margin: 0 auto;
   padding: 110px 24px 90px;
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+.hero-visual img {
+  width: 100%;
+  max-width: 300px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+}
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+}
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.14em;
