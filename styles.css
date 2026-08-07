@@ -92,6 +92,19 @@ a { color: inherit; }
   border-color: var(--blue);
 }
 
+.nav-links a.donate-btn {
+  background: var(--blue);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border-bottom: none;
+}
+.nav-links a.donate-btn:hover {
+  background: var(--blue-dark);
+  color: #fff;
+  border-color: transparent;
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -137,6 +150,17 @@ a { color: inherit; }
     border-left-color: var(--blue);
     border-bottom-color: var(--border);
     background: var(--bg-soft);
+  }
+  .nav-links a.donate-btn {
+    margin: 12px 24px;
+    width: calc(100% - 48px);
+    text-align: center;
+    border-radius: 999px;
+    border-left: none;
+    border-bottom: none;
+  }
+  .nav-links a.donate-btn:hover {
+    background: var(--blue-dark);
   }
 }
 
