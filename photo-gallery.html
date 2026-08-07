@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery | SWAG</title>
+<meta name="description" content="Photos from SWAG water safety clinics at the Davis Community Pool.">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="SWAG logo">
+      SWAG
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="water-safety-clinics.html">Water Safety Clinics</a></li>
+      <li><a href="photo-gallery.html" class="active">Photo Gallery</a></li>
+      <li><a href="our-purpose.html">Our Purpose</a></li>
+      <li><a href="our-why.html">Our Why</a></li>
+      <li><a href="the-team.html">The Team</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <p class="eyebrow">Photo Gallery</p>
+  <h1>Moments from our clinics</h1>
+  <p>Click any photo to view it full size.</p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="gallery-grid">
+      <figure><img src="images/gallery-clinic-IMG_0905.jpg" alt="SWAG clinic at the Davis Community Pool" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-01.jpg" alt="SWAG instructor working with a participant" loading="lazy"></figure>
+      <figure><img src="images/gallery-clinic-IMG_0839.jpg" alt="SWAG coaches poolside" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-05.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-10.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-clinic-IMG_0882.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-15.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-20.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-clinic-IMG_0909.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-25.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-30.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-clinic-IMG_0941.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-35.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-40.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-45.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-50.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+      <figure><img src="images/gallery-swag-55.jpg" alt="SWAG clinic session" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img src="" alt="Enlarged photo">
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="SWAG logo">
+        <span>SWAG &mdash; Swim AGS</span>
+      </div>
+      <p>Free water safety clinics for the UC Davis community, held at the Davis Community Pool.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="water-safety-clinics.html">Water Safety Clinics</a></li>
+        <li><a href="photo-gallery.html">Photo Gallery</a></li>
+        <li><a href="our-purpose.html">Our Purpose</a></li>
+        <li><a href="our-why.html">Our Why</a></li>
+        <li><a href="the-team.html">The Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get Involved</h4>
+      <ul>
+        <li><a href="https://forms.gle/5JZZHzAvWUWawD1s6" target="_blank" rel="noopener">Participant Sign Up</a></li>
+        <li><a href="https://forms.gle/j1ZQgwT3dPPv3zo89" target="_blank" rel="noopener">Volunteer Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">&copy; <span id="year"></span> SWAG &mdash; Swim AGS. UC Davis.</div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
