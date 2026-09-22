@@ -31,4 +31,41 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  var isHomePage = /(^|\/)(index\.html)?$/.test(window.location.pathname);
+  if (isHomePage) {
+    var today = new Date().toDateString();
+    var lastShown = localStorage.getItem("swagClinicPopupLastShown");
+    if (lastShown !== today) {
+      var overlay = document.createElement("div");
+      overlay.className = "clinic-popup-overlay";
+      overlay.innerHTML =
+        '<div class="clinic-popup-card" role="dialog" aria-modal="true" aria-label="Fall clinic schedule">' +
+          '<button class="clinic-popup-close" aria-label="Close">&times;</button>' +
+          '<p class="eyebrow">Fall 2026 Clinics</p>' +
+          '<h2>Save your spot!</h2>' +
+          '<p>Free water safety clinics at the Davis Community Pool, 1:00-3:00 PM.</p>' +
+          '<ul class="clinic-popup-dates">' +
+            '<li>Oct 3</li><li>Oct 17</li><li>Oct 31</li><li>Nov 14</li>' +
+          '</ul>' +
+          '<div class="btn-row"><a class="btn btn-primary" href="water-safety-clinics.html#fall-schedule">View Schedule &amp; Sign Up</a></div>' +
+        '</div>';
+      document.body.appendChild(overlay);
+
+      var closePopup = function () {
+        overlay.classList.remove("open");
+        overlay.remove();
+      };
+      overlay.querySelector(".clinic-popup-close").addEventListener("click", closePopup);
+      overlay.addEventListener("click", function (e) {
+        if (e.target === overlay) closePopup();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closePopup();
+      });
+
+      requestAnimationFrame(function () { overlay.classList.add("open"); });
+      localStorage.setItem("swagClinicPopupLastShown", today);
+    }
+  }
 });
