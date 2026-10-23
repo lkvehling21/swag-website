@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
           '<h2>Save your spot!</h2>' +
           '<p>Free water safety clinics at the Davis Community Pool.</p>' +
           '<ul class="clinic-popup-dates">' +
-            '<li>Oct 31, 1:00-3:00 PM</li><li>Nov 8, time TBD</li>' +
+            '<li>Oct 31, 1:30-3:30 PM</li><li>Nov 8, time TBD</li>' +
           '</ul>' +
           '<div class="btn-row"><a class="btn btn-primary" href="water-safety-clinics.html#fall-schedule">View Schedule &amp; Sign Up</a></div>' +
         '</div>';
