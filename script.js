@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
           '<button class="clinic-popup-close" aria-label="Close">&times;</button>' +
           '<p class="eyebrow">Fall 2026 Clinics</p>' +
           '<h2>Save your spot!</h2>' +
-          '<p>Free water safety clinics at the Davis Community Pool, 1:00-3:00 PM.</p>' +
+          '<p>Free water safety clinics at the Davis Community Pool.</p>' +
           '<ul class="clinic-popup-dates">' +
-            '<li>Oct 3</li><li>Oct 17</li><li>Oct 31</li><li>Nov 14</li>' +
+            '<li>Oct 31, 1:00-3:00 PM</li><li>Nov 8, time TBD</li>' +
           '</ul>' +
           '<div class="btn-row"><a class="btn btn-primary" href="water-safety-clinics.html#fall-schedule">View Schedule &amp; Sign Up</a></div>' +
         '</div>';
