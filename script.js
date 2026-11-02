@@ -40,15 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
       var overlay = document.createElement("div");
       overlay.className = "clinic-popup-overlay";
       overlay.innerHTML =
-        '<div class="clinic-popup-card" role="dialog" aria-modal="true" aria-label="Fall clinic schedule">' +
+        '<div class="clinic-popup-card" role="dialog" aria-modal="true" aria-label="Clinic update">' +
           '<button class="clinic-popup-close" aria-label="Close">&times;</button>' +
-          '<p class="eyebrow">Fall 2026 Clinics</p>' +
-          '<h2>Save your spot!</h2>' +
-          '<p>Free water safety clinics at the Davis Community Pool.</p>' +
-          '<ul class="clinic-popup-dates">' +
-            '<li>Oct 31, 1:30-3:30 PM</li><li>Nov 8, time TBD</li>' +
-          '</ul>' +
-          '<div class="btn-row"><a class="btn btn-primary" href="water-safety-clinics.html#fall-schedule">View Schedule &amp; Sign Up</a></div>' +
+          '<p class="eyebrow">Clinic Update</p>' +
+          '<h2>See you in the spring!</h2>' +
+          '<p>The Davis Community Pool is closed for the season due to weather, and the heater has been turned off. We\'re looking forward to clinics in the spring and looking into other options now.</p>' +
+          '<div class="btn-row"><a class="btn btn-primary" href="water-safety-clinics.html#fall-schedule">Read the Update</a></div>' +
         '</div>';
       document.body.appendChild(overlay);
 
